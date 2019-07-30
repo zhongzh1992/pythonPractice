@@ -154,3 +154,14 @@ since = time.time()
 1.爬虫：从一个网页爬取所要的信息
 
 参考：https://blog.csdn.net/aaalswaaa1/article/details/81280588
+
+2.numpy的使用
+创建
+获取维度
+数组索引与切片
+数组比较
+替代值
+数据类型转换
+统计计算方法
+
+3.正则表达式
