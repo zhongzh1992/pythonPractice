@@ -8,7 +8,7 @@ Number:int、float、bool、complex
 2、一个变量可以通过赋值指向不同类型的对象。
 type(x)
 3、数值的除法（/）总是返回一个浮点数，要获取整数使用//操作符。
-4、在混合计算时，Pyhton会把整型转换成为浮点数。
+4、在混合计算时，Python会把整型转换成为浮点数。
 
 
 String
@@ -154,3 +154,73 @@ since = time.time()
 1.爬虫：从一个网页爬取所要的信息
 
 参考：https://blog.csdn.net/aaalswaaa1/article/details/81280588
+
+2.numpy的使用
+创建
+获取维度
+数组索引与切片
+数组比较
+替代值
+数据类型转换
+统计计算方法
+
+shape
+功能：获取各维度大小
+
+np.reshape()
+
+np.asarray vs np.array
+np.asarray复制但不拷贝
+np.array拷贝
+
+to_categorical()
+功能：转化为类别矩阵
+
+np.newaxis
+功能：增加新维度
+
+numpy.random.normal(loc=0.0, scale=1.0, size=None)
+
+功能：获取正态分布，loc为均值，scale为标准差，scale越大越矮胖，scale越小越瘦高
+
+numpy.random.uniform(low,high,size)
+
+功能：从一个均匀分布[low,high)中随机采样，注意定义域是左闭右开，即包含low，不包含high.
+
+numpy.linspace(start, stop, num=50)
+功能：获取num个从start到stop到之间到均匀分布样本
+
+numpy.random.random((100, 10))
+功能：生成一千个0-1之间的浮点数矩阵100*10
+
+numpy.sum(arr,axis=0)
+说明：
+axis=0表示n0为定值，即sum = a[0][n1][n2]+a[1][n1][n2]
+
+3.正则表达式
+
+.代表除\n外的任意字符
+\s空字符
+\w包括下划线的任意单词
+\d代表数字
+*代表前面的东西0或多个
++代表前面的东西1或多个
+?代表前面的东西0或多个,非贪婪
+[a-z]代表a-z之间的字符
+a|b代表匹配a或b
+
+re.compile()
+re.search()
+re.findall()
+
+4.随机数Random
+
+5.文件
+
+csv
+
+json
+
+dump
+    pickle.dump
+    pickle.load
