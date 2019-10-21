@@ -47,3 +47,7 @@ print("cost:%f" % (after - since))
 print(str([1, 2, 3, 4, 5, 6, 7, 8]))
 print(str({'cat': 10, 'dog': 2}))
 print("abc".startswith('ab'))
+
+aList = [123, 'xyz', 'runoob', 'abc']
+print ("xyz 索引位置: ", aList.index('xyz'))
+print("runoob 索引位置 : ", aList.index('runoob', 1, 3))
